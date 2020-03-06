@@ -1,0 +1,22 @@
+each array, key in list
+    ul
+        li #{key}
+        each brewery in array
+            li #{brewery.street}
+
+table(style='width:100%', border='1')
+    tr
+        th id
+        th name
+        th full_address
+        th phone
+        th website_url
+        each brewery in table
+            tr
+                td #{brewery.id}
+                td #{brewery.name}
+                td #{brewery.getFullAddress()}
+                td #{brewery.phone}
+                td #{brewery.website_url}
+
+
